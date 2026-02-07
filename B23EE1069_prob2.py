@@ -1,6 +1,5 @@
 from collections import defaultdict
 
-
 class SimpleTokenizer:
     def __init__(self):
         self.corpus = []
