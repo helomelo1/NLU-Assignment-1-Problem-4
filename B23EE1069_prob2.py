@@ -1,3 +1,4 @@
+import sys
 from collections import defaultdict
 
 class SimpleTokenizer:
@@ -86,4 +87,17 @@ def example():
 
 
 if __name__ == "__main__":
-    example()
+    filename = sys.argv[1]
+
+    with open(filename, 'r', encoding='utf-8') as f:
+        text = f.read()
+
+    tokenizer = SimpleTokenizer()
+
+    tokenizer.init_vocab(text)
+    tokenizer.train(50)
+
+    tokens = tokenizer.tokenize(text)
+
+    print("Tokens:")
+    print(tokens)
