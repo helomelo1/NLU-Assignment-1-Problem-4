@@ -143,4 +143,7 @@ if __name__ == "__main__":
     sentence = str(input())
     tokens = tokenize(sentence.strip().lower())
 
-    print(model.predict(tokens))
+    if model.predict(tokens) == 1:
+        print("POSITIVE")
+    else:
+        print("NEGATIVE")
