@@ -43,7 +43,7 @@ Three machine learning models were compared:
 
 ## Experimental Setup
 
-The dataset was split into training and testing sets using three different test sizes:
+The dataset was split into training and testing sets using four different test sizes:
 
 - 20% test split
 - 40% test split
