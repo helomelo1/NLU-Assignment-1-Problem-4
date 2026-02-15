@@ -45,9 +45,10 @@ Three machine learning models were compared:
 
 The dataset was split into training and testing sets using three different test sizes:
 
+- 20% test split
+- 40% test split
 - 60% test split
-- 75% test split
-- 90% test split
+- 80% test split
 
 This was done to observe how model performance changes with different training data sizes.
 
