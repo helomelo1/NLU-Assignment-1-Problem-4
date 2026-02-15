@@ -1,0 +1,50 @@
+===== RUN 1 =====
+
+Reggy: Hello! I'm Reggy.
+Reggy: What's your full name? (type 'exit' anytime)
+You: My name is Shrihari Dumbre.
+Reggy: Nice to meet you, Dumbre. When is your birthday?
+You: It is on 16th March 2005
+Reggy: You are 20 years old. How are you feeling today?
+You: I am not feeling good.
+Reggy: I'm sorry you're feeling that way, Dumbre.
+You: How are you?
+Reggy: I'm doing well, thanks for asking.
+You: Bye.
+Reggy: It was nice chatting with you. Goodbye.
+
+===== RUN 2 =====
+
+Reggy: Hello! I'm Reggy.
+Reggy: What's your full name? (type 'exit' anytime)
+You: Shrihari Dumbre
+Reggy: Nice to meet you, Dumbre. When is your birthday?
+You: 16-03-2005
+Reggy: You are 20 years old. How are you feeling today?
+You: I am doing fine.
+Reggy: That's great to hear, Dumbre.
+You: What is my name?
+Reggy: Your surname is Dumbre.
+You: THanks
+Reggy: You're welcome.
+You: exit
+Reggy: It was nice chatting with you. Goodbye.
+
+===== RUN 3 =====
+
+Reggy: Hello! I'm Reggy.
+Reggy: What's your full name? (type 'exit' anytime)
+You: I am Shrihari Dumbre
+Reggy: Nice to meet you, Dumbre. When is your birthday?
+You: My birthday is on 16th March 2005.
+Reggy: You are 20 years old. How are you feeling today?
+You: feeling very agitated and anxious
+Reggy: Thanks for sharing, Dumbre.
+You: I don't want to study today.
+Reggy: That's interesting, Dumbre. Tell me more.
+You: Who are you?
+Reggy: That's interesting, Dumbre. Tell me more.
+You: I am not feeling good.
+Reggy: That's interesting, Dumbre. Tell me more.
+You: bye
+Reggy: It was nice chatting with you. Goodbye.

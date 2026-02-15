@@ -54,7 +54,7 @@ def parse_birthday(text):
 def detect_mood(text):
     text = text.lower()
 
-    if re.search(r'not\s+\w*\s*(good|happy|fine|ok)', text):
+    if re.search(r'not.*(good|happy|fine|ok)', text):
         return "negative"
 
     if re.search(r'sad+|bad+|tir+ed|stress+|angr+y', text):
@@ -64,6 +64,7 @@ def detect_mood(text):
         return "positive"
 
     return "neutral"
+
 
 
 def chatbot():
