@@ -17,31 +17,38 @@ X = df["Text"]
 y = df["label"]
 
 print("Dataset size:", df.shape)
-print("\nClass distribution:\n", df["Category"].value_counts())
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.75, random_state=67)
+def run_experiment(ts):
+    print(f"\n****** Experiment With Test Size: {ts} ******\n")
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=ts, random_state=67)
 
-vectorizer = TfidfVectorizer(
-    stop_words="english",
-    ngram_range=(1, 2),
-    max_features=5000
-)
+    vectorizer = TfidfVectorizer(
+        stop_words="english",
+        ngram_range=(1, 2),
+        max_features=5000
+    )
 
-X_train_tfidf = vectorizer.fit_transform(X_train)
-X_test_tfidf = vectorizer.transform(X_test)
+    X_train_tfidf = vectorizer.fit_transform(X_train)
+    X_test_tfidf = vectorizer.transform(X_test)
 
 
-models = {
-    "Naive Bayes": MultinomialNB(),
-    "Logistic Regression": LogisticRegression(max_iter=1000),
-    "SVM": LinearSVC()
-}
+    models = {
+        "Naive Bayes": MultinomialNB(),
+        "Logistic Regression": LogisticRegression(max_iter=1000),
+        "SVM": LinearSVC()
+    }
 
-results = {}
+    results = {}
 
-for name, model in models.items():
-    model.fit(X_train_tfidf, y_train)
-    preds = model.predict(X_test_tfidf)
-    acc = accuracy_score(y_test, preds)
-    results[name] = acc
-    print(f"{name} Accuracy: {acc:.4f}")
+    for name, model in models.items():
+        model.fit(X_train_tfidf, y_train)
+        preds = model.predict(X_test_tfidf)
+        acc = accuracy_score(y_test, preds)
+        results[name] = acc
+        print(f"{name} Accuracy: {acc:.4f}")
+
+if __name__ == "__main__":
+    run_experiment(0.2)
+    run_experiment(0.4)
+    run_experiment(0.6)
+    run_experiment(0.8)
