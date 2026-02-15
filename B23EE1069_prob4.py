@@ -19,7 +19,7 @@ y = df["label"]
 print("Dataset size:", df.shape)
 print("\nClass distribution:\n", df["Category"].value_counts())
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.90, random_state=67)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.75, random_state=67)
 
 vectorizer = TfidfVectorizer(
     stop_words="english",
