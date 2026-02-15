@@ -57,4 +57,8 @@ This was done to observe how model performance changes with different training d
 
 All models performed very well because sports and politics articles contain very different vocabulary.
 
-SVM and Naive Bay
+SVM and Naive Bayes consistently achieved the highest accuracy.
+
+Accuracy decreased slightly when training data became smaller.
+
+---
