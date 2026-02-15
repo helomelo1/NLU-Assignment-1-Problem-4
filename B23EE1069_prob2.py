@@ -87,7 +87,8 @@ def example():
 
 
 if __name__ == "__main__":
-    filename = sys.argv[1]
+    filename = sys.argv[2]
+    k = sys.argv[1]
 
     with open(filename, 'r', encoding='utf-8') as f:
         text = f.read()
@@ -95,7 +96,7 @@ if __name__ == "__main__":
     tokenizer = SimpleTokenizer()
 
     tokenizer.init_vocab(text)
-    tokenizer.train(50)
+    tokenizer.train(k)
 
     tokens = tokenizer.tokenize(text)
 
