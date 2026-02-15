@@ -89,6 +89,7 @@ def example():
 if __name__ == "__main__":
     filename = sys.argv[2]
     k = sys.argv[1]
+    k = (int)(k)
 
     with open(filename, 'r', encoding='utf-8') as f:
         text = f.read()
